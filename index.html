@@ -4,51 +4,65 @@
     <title>BrunoBravo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina personal de Bruno Bravo">
-    <meta name="Keywords" content="UNAM, FES, Aragon, ICO,Computacion, Bruno Bravo">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Pagina personal sobre un ingeniero en Computacion">
+    <meta name="Keywords" content="UNAM, FES, Aragon, Ingeniería,Computacion, Bruno,software">
+    <link rel="icon" href="./assets/img/LogoB.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/master.css">
+    <script src="./assets/js/cliente.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Pagina de BrunoBravo</h1>
+        <h1>BrunoBravo</h1>
         <nav>
             <ul>
-                <li><a href="http://aragon.unam.mx">FES Aragon</a></li>
-                <li><a href="http://www.google.com">Google</a></li>
+                <li><a href="http://aragon.unam.mx" target="_blank" rel="noopener noreferrer" class="visitado">FES Aragon</a></li>
+                <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+                <li><a href="https://www.unam.mx" target="_blank" rel="noopener noreferrer">UNAM</a></li>
+                <li><a href="https://github.com/BrukoBravo30/BrukoBravo30.github.io" target="_blank" rel="noopener noreferrer">Repositorio</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>"Perfil de Competencias en Ingeniería de Computación"</h1>
-            <article>
-                <h3>"Desarrollador con habilidades en algoritmos, programación y sistemas Linux"</h3>
-                <p>"Soy estudiante de Ingeniería en Computación con sólida formación en estructuras de datos y programación orientada a objetos, utilizando lenguajes como Java y Python. Tengo experiencia en el manejo avanzado de la terminal de Linux y en el análisis de algoritmos, 
-                    especialmente en la evaluación de su eficiencia utilizando la notación Big O."</p>
-               
+        <section class="seccion_estudios">
+            <h1>Desarrollador con habilidades en algoritmos, programación y sistemas Linux</h1>
+            <article class="info_estudios">
+                <h3>Informacion sobre mis estudios</h3>
+                <p>Soy estudiante de Ingeniería en Computación con formación en estructuras de datos y programación orientada a objetos. 
+                </p>
             </article>
-            <article>
-                <h3>Titulo articulo 2, de la seccion 1</h3>
-                <p>parrafo 1 del articulo 2, de la seccion 1</p>
+            <article class="info_habilidad">
+                <h3>Informacion sobre mis habilidades</h3>
+                <p id="parrafo2">Programacion,mecanografia,analisis e ingles intermedio.</p>
             </article>
         </section>
-        <section>
-            <h1>Titulo seccion 2</h1>
+        <section class="tecnologias">
+            <h1>Tecnologias utilizadas</h1>
             <article>
-                <h3>Titulo articulo 1 de la seccion 2</h3>
-                <p>Parrafo del art1 de la seccion 2</p>
+                <div class="contenedor_animacion">
+                    <span id="texto_escribiendose"></span>
+                    <span class="cursor">|</span>
+                </div>   
             </article>
         </section>
     </main>
-    <aside>
-        <h4>Informacion adicional</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, 
-            ullam impedit provident consectetur obcaecati error, expedita maiores nam vitae optio quasi minus, 
-            aspernatur sunt ducimus dicta voluptatum distinctio molestiae tenetur.</p>
-    </aside>
+    <section>
+        <article class="info-adicional">
+            <h4>Informacion adicional:</h4>
+            <div class="info-adicional-content">
+                <p>Mis pasatiempos son hacer ejercicio, dibujar y en ocasiones cocinar.</p>
+            </div>
+        </article>
+        <script>
+            document.querySelector('.info-adicional').addEventListener('click', function() {
+                this.classList.toggle('show');
+            });
+        </script>
+    </section>
     <footer>
-        <p>derechos reservados</p>
+        <p>Derechos reservados a Bruno Bravo</p>
     </footer>
 </body>
 </html>
